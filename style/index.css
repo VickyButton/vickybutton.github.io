@@ -322,8 +322,8 @@ section {
 }
 
 .map-part:nth-child(2n - 1):before {
-	height: 11px;
-	top: -14px;
+	height: 12px;
+	top: -15px;
 	right: -5px;
 }
 
@@ -334,9 +334,9 @@ section {
 .map-part:last-child:before {
 	content: '';
 	position: absolute;
-	top: -10px;
+	top: -11px;
 	right: -5px;
-	height: 8px;
+	height: 9px;
 	width: 50%;
 	background: #fff;
 }
