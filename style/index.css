@@ -286,17 +286,18 @@ section {
 .map-part:nth-child(2n):before, .map-part:nth-child(2n):after {
 	content: '';
 	position: absolute;
-	height: 6px;
 	width: 50%;
 	background: #fff;
 }
 
 .map-part:nth-child(2n):before {
-	top: -7px;
+	height: 8px;
+	top: -6px;
 	right: -5px;
 }
 
 .map-part:nth-child(2n):after {
+	height: 6px;
 	top: -8px;
 	left: -5px;
 }
@@ -309,18 +310,19 @@ section {
 .map-part:nth-child(2n - 1):after, .map-part:nth-child(2n - 1):before {
 	content: '';
 	position: absolute;
-	height: 6px;
 	width: 50%;
 	background: #fff;
 }
 
 .map-part:nth-child(2n - 1):after {
+	height: 6px;
 	top: -6px;
 	left: -5px;
 }
 
 .map-part:nth-child(2n - 1):before {
-	top: -12px;
+	height: 8px;
+	top: -13px;
 	right: -5px;
 }
 
