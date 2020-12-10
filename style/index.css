@@ -292,7 +292,7 @@ section {
 }
 
 .map-part:nth-child(2n):before {
-	top: -5px;
+	top: -7px;
 	right: -5px;
 }
 
