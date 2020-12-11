@@ -16,7 +16,7 @@
         <div class="content flex">
             <h1 class="header-title">Vicky Button</br> Web Design &<br/> Development</h1>
             <h2 class="header-description">We create premium, hand-crafted websites tailored to your business's needs. Launch your online presence today for as low as $150/mo.</h2>
-            <button class="button flex header-button">get started</button>
+            <button class="button flex header-button" onclick="scrollToClass('footer')">get started</button>
         </div>
     </section>
     <section class="flex">
@@ -32,7 +32,7 @@
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> domain</li>
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex">get now</button>
+                        <button class="button flex" onclick="scrollToClass('footer')">get now</button>
                     </div>
                 </div>
                 <div class="featured flex information-card">
@@ -48,7 +48,7 @@
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> domain</li>
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex">get now</button>
+                        <button class="button flex" onclick="scrollToClass('footer')">get now</button>
                     </div>
                 </div>
                 <div class="flex information-card">
@@ -61,7 +61,7 @@
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> domain</li>
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex">get now</button>
+                        <button class="button flex" onclick="scrollToClass('footer')">get now</button>
                     </div>
                 </div>
             </div>
@@ -98,12 +98,13 @@
     <section class="footer flex">
         <div class="content flex">
             <h2 class="section-header">Contact Us</h2>
-            <form class="flex footer-contact-form">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="business" placeholder="Business">
-                <input type="email" name="email" placeholder="Email">
-                <input type="tel" name="phoneNumber" placeholder="Phone Number">
-                <textarea name="message" placeholder="Message"></textarea>
+            <form name="contact" method="post" class="flex footer-contact-form" data-netlify-recaptcha="true" data-netlify="true">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="business" placeholder="Business" optional>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <div data-netlify-recaptcha="true"></div>
                 <input type="submit" value="Submit">
             </form>
             <footer class="flex">
@@ -112,6 +113,7 @@
         </div>
     </section>
 </div>
-<script type="javascript" src="js/index.js"></script>
+
+<script src="js/index.js"></script>
 </body>
 </html>
