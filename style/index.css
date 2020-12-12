@@ -478,7 +478,7 @@ section {
 	box-shadow: var(--cardShadow);
 }
 
-.footer-contact-form > input, .footer-contact-form > textarea {
+.footer-contact-form > * {
 	margin-bottom: 20px;
 	padding: 10px 10px;
 	border: 1px rgb(216, 216, 216) solid;
