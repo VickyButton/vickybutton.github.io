@@ -379,8 +379,8 @@ section {
 }
 
 .map-part:nth-child(2n - 1):after {
-	height: 6px;
-	top: -6px;
+	height: 7px;
+	top: -7px;
 	left: -5px;
 }
 
