@@ -380,7 +380,7 @@ section {
 
 .map-part:nth-child(2n - 1):after {
 	height: 7px;
-	top: -7px;
+	top: -5px;
 	left: -5px;
 }
 
