@@ -480,12 +480,12 @@ section {
 
 .footer-contact-form > * {
 	margin-bottom: 20px;
+	border-radius: var(--boxRadius);
 }
 
 .footer-contact-form > input, .footer-contact-form > textarea {
 	padding: 10px 10px;
 	border: 1px rgb(216, 216, 216) solid;
-	border-radius: var(--boxRadius);
 	font-family: var(--quicksand);
 	font-size: 1rem;
 	transition: 300ms;
