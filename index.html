@@ -16,7 +16,10 @@
         <div class="content flex">
             <h1 class="header-title">Vicky Button</br> Web Design &<br/> Development</h1>
             <h2 class="header-description">We create premium, hand-crafted websites tailored to your business's needs. Launch your online presence today for as low as $150/mo.</h2>
-            <button class="button flex header-button" onclick="scrollToClass('footer')">contact us</button>
+            <div class="flex header-buttons">
+                <button class="button flex header-button" onclick="scrollToSection('services')">view plans</button>
+                <button class="button flex header-button" onclick="scrollToSection('footer', true)">contact us</button>
+            </div>
         </div>
     </section>
     <section class="flex">
@@ -31,32 +34,32 @@
                 <div class=" flex map-part">
                     <div class="flex map-step">1</div>
                     <span class="map-text">You tell us your idea and what you want done.</span>
-                    <img src="media/streamline-icon-app-idea@140x140.png" class="map-img map-img-right">
+                    <img src="media/streamline-icon-app-idea@140x140.png" alt="An application window with a lightbulb coming out of it" class="map-img map-img-right">
                 </div>
                 <div class="flex map-part">
                     <span class="map-text">We craft your website from scratch with your guidance and resources.</span>
-                    <img src="media/streamline-icon-app-building-1@140x140.png" class="map-img map-img-left">
+                    <img src="media/streamline-icon-app-building-1@140x140.png" alt="An application window with a corner replaced with a grid and a hammer and pencil in front of it" class="map-img map-img-left">
                     <div class="flex map-step">2</div>
                 </div>
                 <div class="flex map-part">
                     <span class="map-text">We extensively test your website and its performance on different devices.</span>
-                    <img src="media/streamline-icon-app-performance-1@140x140.png" class="map-img map-img-right">
+                    <img src="media/streamline-icon-app-performance-1@140x140.png" alt="An application window with a speedometer and three lights" class="map-img map-img-right">
                     <div class="flex map-step">3</div>
                 </div>
                 <div class="flex map-part">
                     <span class="map-text">After you are satisfied with the website, we launch your website.</span>
-                    <img src="media/streamline-icon-app-launch@140x140.png" class="map-img map-img-left">
+                    <img src="media/streamline-icon-app-launch@140x140.png" alt="An application window with a rocket launching from inside it" class="map-img map-img-left">
                     <div class="flex map-step">4</div>
                 </div>
                 <div class="flex map-part">
                     <span class="map-text">After your website is launched, contact us to request changes to your website.</span>
-                    <img src="media/streamline-icon-fast-email@140x140.png" class="map-img map-img-right">
+                    <img src="media/streamline-icon-fast-email@140x140.png" alt="Three envelopes launching through the air" class="map-img map-img-right">
                     <div class="flex map-step">5</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="flex">
+    <section class="flex" id="services">
         <div class="content flex services-content">
             <div class="flex information-card-container">
                 <div class="flex information-card">
@@ -64,12 +67,12 @@
                     <div class="flex information-card-content">
                         <h3 class="price"><span class="small-dollar-sign">$</span>150<span class="small-text">/mo</span></h3>
                         <ul class="includes">
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">3 pages</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">3 changes/mo</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> domain</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> hosting</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">3 pages</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">3 changes/mo</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> domain</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex" onclick="scrollToClass('footer')">get now</button>
+                        <button class="button flex" onclick="scrollToSection('footer', true)">get now</button>
                     </div>
                 </div>
                 <div class="featured flex information-card">
@@ -78,14 +81,14 @@
                         <h3 class="flashy new-price"><span class="small-dollar-sign">$</span>200<span class="small-text">/mo</span></h3>
                         <h3 class="old-price price"><span class="small-dollar-sign">$</span>250<span class="small-text">/mo</span></h3>
                         <ul class="includes">
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">10 pages</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">20 changes/mo</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">SEO optimization</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">Google Analytics</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> domain</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> hosting</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">10 pages</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">20 changes/mo</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">SEO optimization</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">Google Analytics</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> domain</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex" onclick="scrollToClass('footer')">get now</button>
+                        <button class="button flex" onclick="scrollToSection('footer', true)">get now</button>
                     </div>
                 </div>
                 <div class="flex information-card">
@@ -93,19 +96,19 @@
                     <div class="flex information-card-content">
                         <h3 class="price"><span class="small-dollar-sign">$</span>400<span class="small-text">/mo</span></h3>
                         <ul class="includes">
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">Custom SKU</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png">Payment Integration</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> domain</li>
-                            <li><img src="media/streamline-icon-check-circle-1@140x140.png"><span class="flashy">Free</span> hosting</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">Custom SKU</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt="">Payment Integration</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> domain</li>
+                            <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex" onclick="scrollToClass('footer')">get now</button>
+                        <button class="button flex" onclick="scrollToSection('footer', true)">get now</button>
                     </div>
                 </div>
             </div>
             <span>*If your website exceeds the scope of available plans, custom pricing is available.
         </div>
     </section>
-    <section class="footer flex">
+    <section class="flex" id="footer">
         <div class="content flex">
             <h2 class="section-header">Contact Us</h2>
             <form name="contact" method="post" class="flex footer-contact-form" data-netlify-recaptcha="true" data-netlify="true">

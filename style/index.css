@@ -149,10 +149,20 @@ section {
 	line-height: 1.6rem;
 }
 
+.header-buttons {
+	flex-direction: row;
+}
+
 .header-button {
 	box-sizing: border-box;
+	margin-right: 20px;
 	background: #fff;
 	color: #000;
+}
+
+.header-button:nth-child(2) {
+	background: var(--babyBlue);
+	color: var(--navyBlue);
 }
 
 .header-img {
@@ -437,7 +447,7 @@ section {
 
 /*FOOTER*/
 
-.footer {
+#footer {
 	box-sizing: border-box;
 	padding: 120px 20px 0;
 	width: 100%;
@@ -445,7 +455,7 @@ section {
 	clip-path: ellipse(150% 100% at 60% 100%);
 }
 
-.footer h2 {
+#footer h2 {
 	margin-top: 30px;
 	color: #fff;
 }

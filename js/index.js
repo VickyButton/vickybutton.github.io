@@ -1,8 +1,8 @@
-function scrollToClass(className) {
-    let element = document.getElementsByClassName(className)[0];
+function scrollToSection(sectionID, offsetPadding) {
+    let element = document.getElementById(sectionID);
 
     window.scroll({
-        top: element.offsetTop + parseFloat(window.getComputedStyle(element).getPropertyValue('padding-top')),
+        top: element.offsetTop + (offsetPadding ? parseFloat(window.getComputedStyle(element).getPropertyValue('padding-top')) : 0),
         behavior: 'smooth'
     })
 }
