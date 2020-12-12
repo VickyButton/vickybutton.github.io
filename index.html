@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
-    <title>Portfolio</title>
+    <title>Vicky Button | Web Developer</title>
 </head>
 <body>
 <div class="container flex wrapper">
@@ -16,7 +16,7 @@
         <div class="content flex">
             <h1 class="header-title">Vicky Button</br> Web Design &<br/> Development</h1>
             <h2 class="header-description">We create premium, hand-crafted websites tailored to your business's needs. Launch your online presence today for as low as $150/mo.</h2>
-            <button class="button flex header-button" onclick="scrollToClass('footer')">get started</button>
+            <button class="button flex header-button" onclick="scrollToClass('footer')">contact us</button>
         </div>
     </section>
     <section class="flex">
@@ -72,25 +72,30 @@
         <div class="content flex map-content">
             <h2 class="section-header">How It Works</h2>
             <div class="flex map">
-                <div class="map-part">
-                    <span class="map-text">1. You tell us your idea and what you want done.</span>
-                    <img src="media/streamline-icon-app-idea@140x140.png" class="map-img">
+                <div class=" flex map-part">
+                    <div class="flex map-step">1</div>
+                    <span class="map-text">You tell us your idea and what you want done.</span>
+                    <img src="media/streamline-icon-app-idea@140x140.png" class="map-img map-img-right">
                 </div>
-                <div class="map-part">
-                    <span class="map-text">2. We craft your website from scratch with your guidance and resources.</span>
-                    <img src="media/streamline-icon-app-building-1@140x140.png" class="map-img">
+                <div class="flex map-part">
+                    <span class="map-text">We craft your website from scratch with your guidance and resources.</span>
+                    <img src="media/streamline-icon-app-building-1@140x140.png" class="map-img map-img-left">
+                    <div class="flex map-step">2</div>
                 </div>
-                <div class="map-part">
-                    <span class="map-text">3. We extensively test your website and its performance on different devices.</span>
-                    <img src="media/streamline-icon-app-performance-1@140x140.png" class="map-img">
+                <div class="flex map-part">
+                    <span class="map-text">We extensively test your website and its performance on different devices.</span>
+                    <img src="media/streamline-icon-app-performance-1@140x140.png" class="map-img map-img-right">
+                    <div class="flex map-step">3</div>
                 </div>
-                <div class="map-part">
-                    <span class="map-text">4. After you are satisfied with the website, we launch your website.</span>
-                    <img src="media/streamline-icon-app-launch@140x140.png" class="map-img">
+                <div class="flex map-part">
+                    <span class="map-text">After you are satisfied with the website, we launch your website.</span>
+                    <img src="media/streamline-icon-app-launch@140x140.png" class="map-img map-img-left">
+                    <div class="flex map-step">4</div>
                 </div>
-                <div class="map-part">
-                    <span class="map-text">5. After your website is launched, contact us to request changes to your website.</span>
-                    <img src="media/streamline-icon-fast-email@140x140.png" class="map-img">
+                <div class="flex map-part">
+                    <span class="map-text">After your website is launched, contact us to request changes to your website.</span>
+                    <img src="media/streamline-icon-fast-email@140x140.png" class="map-img map-img-right">
+                    <div class="flex map-step">5</div>
                 </div>
             </div>
         </div>
@@ -99,11 +104,11 @@
         <div class="content flex">
             <h2 class="section-header">Contact Us</h2>
             <form name="contact" method="post" class="flex footer-contact-form" data-netlify-recaptcha="true" data-netlify="true">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="business" placeholder="Business" optional>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
-                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="text" name="name" placeholder="Name" maxlength="64" required>
+                <input type="text" name="business" placeholder="Business" maxlength="64" optional>
+                <input type="email" name="email" placeholder="Email" maxlength="128" required>
+                <input type="tel" name="phoneNumber" placeholder="Phone Number" maxlength="16" required>
+                <textarea name="message" placeholder="Message" maxlength="2000" required></textarea>
                 <div data-netlify-recaptcha="true"></div>
                 <input type="submit" value="Submit">
             </form>
