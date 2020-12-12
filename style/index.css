@@ -61,11 +61,12 @@ table {
 	--royalBlue: rgb(65, 105, 225);
 	--blueGrotto: rgb(4, 118, 208);
 	--babyBlue: rgb(137, 207, 240);
+	--softBlue: rgb(196, 236, 255);
 
 	--flashyGreen: rgb(44, 155, 44);
 	--blueGradient: linear-gradient(150deg, var(--navyBlue) 40%, var(--blueGrotto));
 	--blueGradientFlipped: linear-gradient(60deg, var(--navyBlue) 40%, var(--blueGrotto));
-	--cardShadow: 0 20px 30px 1px rgba(0,0,0,0.3);
+	--cardShadow: 0 0 20px 1px rgba(105, 105, 105, 0.15);
 
 	--boxRadius: 4px;
 }
@@ -116,6 +117,12 @@ section {
 	cursor: pointer;
 }
 
+.bold-text {
+	font-weight: 1000;
+}
+
+/*HEADER*/
+
 .rounded-header {
 	position: relative;
 	align-items: center;
@@ -154,6 +161,24 @@ section {
 	position: absolute;
 }
 
+/*ABOUT*/
+
+#about-content {
+	margin-top: 30px;
+}
+
+.large-subtitle {
+	font-family: verdana;
+	font-size: 2.8rem;
+	font-variant: small-caps;
+	color: var(--blueGrotto);
+}
+
+.large-subtitle > .bold-text {
+	font-size: 3rem;
+	color: var(--navyBlue);
+}
+
 /*SERVICES*/
 
 .services-content {
@@ -181,15 +206,26 @@ section {
 	min-height: 300px;
 	width: 100%;
 	max-width: 400px;
-	background: var(--blueGradient);
+	background: rgb(243, 243, 243);
+	border: 1px rgb(228, 228, 228) solid;
 	border-radius: var(--boxRadius);
 	box-shadow: var(--cardShadow);
 	font-family: var(--montserrat);
 }
 
+.featured {
+	background: var(--softBlue);
+	border: 1px var(--babyBlue) solid;
+}
+
 .information-card-header {
 	padding: 15px 0;
-	color: #fff;
+	font-weight: 500;
+	color: rgb(129, 129, 129);
+}
+
+.featured > .information-card-header {
+	color: var(--royalBlue);
 }
 
 .information-card-content {
@@ -200,18 +236,36 @@ section {
 	height: 100%;
 	width: 100%;
 	background: #fff;
+	border-top: 1px rgb(228, 228, 228) solid;
+}
+
+.featured > .information-card-content {
+	border-top: 1px var(--babyBlue) solid;
 }
 
 .information-card-content > button {
 	margin: auto 0 20px;
-	background: var(--navyBlue);
-	color: #fff;
+	background: rgb(243, 243, 243);
+	border: 1px rgb(228, 228, 228) solid;
+	font-weight: 400;
+	color: rgb(129, 129, 129);
 	transition: 300ms;
 }
 
-.information-card-content > button:hover, .footer-contact-form > input[type = submit]:hover {
-	transform: translateY(-7px) scale(1.1);
-	box-shadow: 0 5px 30px 1px rgba(0,0,0,0.3);
+.featured > .information-card-content > button {
+	background: var(--softBlue);
+	border: 1px var(--babyBlue) solid;
+	color: var(--royalBlue);
+}
+
+.information-card-content > button:hover {
+	border-color: rgb(210, 210, 210);
+	color: rgb(111, 111, 111);
+}
+
+.featured > .information-card-content > button:hover {
+	border-color: rgb(119, 189, 222);
+	color: rgb(47, 87, 207);
 }
 
 .new-price {
@@ -228,6 +282,11 @@ section {
 .price {
 	padding: 10px 0 20px;
 	font-size: 1.8rem;
+}
+
+.small-dollar-sign {
+	font-size: 60%;
+	vertical-align: top;
 }
 
 .small-text {
@@ -275,7 +334,7 @@ section {
 	width: 100%;
 	max-width: 350px;
 	background: #fff;
-	border: 5px var(--navyBlue) dashed;
+	border: 5px var(--babyBlue) dashed;
 }
 
 .map-part:first-child {
@@ -433,6 +492,11 @@ section {
 	cursor: pointer;
 }
 
+.footer-contact-form > input[type = submit]:hover {
+	transform: translateY(-7px) scale(1.1);
+	box-shadow: 0 5px 30px 1px rgba(0,0,0,0.3);
+}
+
 .footer-contact-form > textarea {
 	height: 200px;
 	resize: none;
@@ -451,6 +515,7 @@ footer {
 	.map-part {
 		height: 400px;
 		width: 100%;
+		max-width: 400px;
 	}
 }
 
