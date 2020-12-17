@@ -11,8 +11,22 @@
     <title>Vicky Button | Web Developer</title>
 </head>
 <body>
-<div class="container flex wrapper">
+<div class="flex" id="hamburger-menu">
+    <ul class="flex" id="pullout-menu">
+        <button class="flex" id="exit-button"></button>
+        <li><a class="menu-link" onclick="scrollToSection('about')">about</a></li>
+        <li><a class="menu-link" onclick="scrollToSection('portfolio')">latest work</a></li>
+        <li><a class="menu-link" onclick="scrollToSection('services')">plans</a></li>
+        <li><a class="menu-link" onclick="scrollToSection('footer', true)">contact us</a></li>
+    </ul>
+</div>
+<div class="container flex" id="wrapper">
     <section class="flex rounded-header">
+        <button class="flex" id="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="content flex">
             <h1 class="header-title">Vicky Button</br> Web Design &<br/> Development</h1>
             <h2 class="header-description">We create premium, hand-crafted websites tailored to your business's needs. Launch your online presence today for as low as $150/mo.</h2>
@@ -22,16 +36,20 @@
             </div>
         </div>
     </section>
-    <section class="flex">
+    <section class="flex" id="about">
         <div class="content flex" id="about-content">
             <h2 class="large-subtitle">
                 <div class="flex">
                     <span class="bold-text">premium websites</span><span> competitive rates</span>
+                    
                 </div>
             </h2>
         </div>
     </section>
-    <section class="flex">
+    <section class="flex" id="portfolio">
+
+    </section>
+    <section class="flex" id="map">
         <div class="content flex map-content">
             <h2 class="section-header">How It Works</h2>
             <div class="flex map">
@@ -51,12 +69,12 @@
                     <div class="flex map-step">3</div>
                 </div>
                 <div class="flex map-part">
-                    <span class="map-text">After you are satisfied with the website, we launch your website.</span>
+                    <span class="map-text">After you are satisfied with your website, we launch your website.</span>
                     <img src="media/streamline-icon-app-launch@140x140.png" alt="An application window with a rocket launching from inside it" class="map-img map-img-left">
                     <div class="flex map-step">4</div>
                 </div>
                 <div class="flex map-part">
-                    <span class="map-text">After your website is launched, contact us to request changes to your website.</span>
+                    <span class="map-text">After your website is launched, contact us anytime to request changes to your website.</span>
                     <img src="media/streamline-icon-fast-email@140x140.png" alt="Three envelopes launching through the air" class="map-img map-img-right">
                     <div class="flex map-step">5</div>
                 </div>
@@ -76,7 +94,7 @@
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> domain</li>
                             <li><img src="media/streamline-icon-check-circle-1@140x140.png" alt=""><span class="flashy">Free</span> hosting</li>
                         </ul>
-                        <button class="button flex" onclick="scrollToSection('footer', true)">get now</button>
+                        <button class="button flex plan-button" onclick="scrollToSection('footer', true)">get now</button>
                     </div>
                 </div>
                 <div class="featured flex information-card">

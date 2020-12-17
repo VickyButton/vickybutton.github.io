@@ -1,3 +1,5 @@
+var hamburgerMenu = document.getElementById('hamburger-menu');
+
 function scrollToSection(sectionID, offsetPadding) {
     let element = document.getElementById(sectionID);
 
@@ -6,3 +8,28 @@ function scrollToSection(sectionID, offsetPadding) {
         behavior: 'smooth'
     })
 }
+
+function toggleMenu() {
+    hamburgerMenu.classList.toggle('pushed');
+}
+
+document.addEventListener('scroll', () => {
+    if(hamburgerMenu.classList.contains('pushed'))
+        toggleMenu();
+})
+
+// document.body.addEventListener('touchstart', e => {
+//     if(hamburgerMenu.classList.contains('pushed') && e.target.id != 'pullout-menu' && e.target.id != 'hamburger-button' && e.target.parentNode.id != 'pullout-menu')
+//         toggleMenu();
+// });
+
+document.body.addEventListener('click', e => {
+    if(hamburgerMenu.classList.contains('pushed') && e.target.id != 'pullout-menu' && e.target.id != 'hamburger-button' && e.target.parentNode.id != 'pullout-menu')
+        toggleMenu();
+});
+
+document.getElementById('exit-button').addEventListener('click', toggleMenu);
+document.getElementById('hamburger-button').addEventListener('click', toggleMenu);
+document.querySelectorAll('.menu-link').forEach(element => {
+    element.addEventListener('click', toggleMenu());
+});
