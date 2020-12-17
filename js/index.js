@@ -1,4 +1,5 @@
 var hamburgerMenu = document.getElementById('hamburger-menu');
+var menuLinks = document.getElementsByClassName('menu-link');
 
 function scrollToSection(sectionID, offsetPadding) {
     let element = document.getElementById(sectionID);
@@ -41,6 +42,26 @@ document.getElementById('scroll-top-button').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-document.querySelectorAll('.menu-link').forEach(element => {
-    element.addEventListener('click', toggleMenu());
-});
+
+for(i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', toggleMenu);
+    console.log(menuLinks.length);
+
+    switch(i) {
+        case 0:
+            menuLinks[i].addEventListener('click', () => {
+                scrollToSection('about');
+            });
+            break;
+        case 1:
+            menuLinks[i].addEventListener('click', () => {
+                scrollToSection('services');
+            });
+            break;
+        case 2:
+            menuLinks[i].addEventListener('click', () => {
+                scrollToSection('footer', true);
+            });
+            break;
+    }
+}
