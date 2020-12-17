@@ -13,23 +13,23 @@
 <body>
 <div class="flex" id="hamburger-menu">
     <ul class="flex" id="pullout-menu">
-        <button class="flex" id="exit-button"></button>
+        <button class="flex no-select" id="exit-button"></button>
         <li><a class="menu-link" onclick="scrollToSection('about')">about</a></li>
         <li><a class="menu-link" onclick="scrollToSection('portfolio')">latest work</a></li>
         <li><a class="menu-link" onclick="scrollToSection('services')">plans</a></li>
         <li><a class="menu-link" onclick="scrollToSection('footer', true)">contact us</a></li>
     </ul>
 </div>
-<button class="flex" id="scroll-top-button">
+<button class="flex no-select" id="scroll-top-button">
 
 </button>
 <div class="container flex" id="wrapper">
     <section class="flex rounded-header">
-        <div class="flex no-select" id="hamburger-button">
+        <a class="flex no-select" id="hamburger-button">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </a>
         <div class="content flex">
             <ul class="flex" id="header-nav">
                 <li><a class="menu-link" onclick="scrollToSection('about')">about</a></li>
