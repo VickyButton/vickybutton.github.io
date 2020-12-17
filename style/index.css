@@ -120,6 +120,7 @@ section {
 
 #scroll-top-button {
 	position: fixed;
+	align-items: center;
 	justify-content: center;
 	bottom: 0;
 	right: 0;
@@ -141,7 +142,7 @@ section {
 	border: solid #000;
 	border-radius: 0 var(--boxRadius) 0 0;
 	border-width: 3px 3px 0 0;
-	transform: rotate(-45deg) translate(-65%, 65%);
+	transform: rotate(-45deg) /*translate(-65%, 65%)*/;
 }
 
 .button {
@@ -722,10 +723,6 @@ footer {
 	#about-content > span {
 		font-size: 1.25rem;
 	}
-}
-
-@media only screen and (min-width: 800px) {
-
 }
 
 @media only screen and (min-width: 1100px) {
