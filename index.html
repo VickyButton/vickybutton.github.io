@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Get your small business website started today!">
-    <meta name="keywords" content="Web Development, Websites, Web Developer">
+    <meta name="description" content="Get your small business website started today! Contact us today to launch your online presense with premium web design and web development.">
+    <meta name="keywords" content="web development, web design, website design, website builder, web developer, web designer, webdesign, ecommerce website, web design">
     <meta name="author" content="Vicky Button">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
-    <title>Vicky Button | Web Developer</title>
+    <title>Vicky Button Web Development</title>
 </head>
 <body>
 <div class="flex" id="hamburger-menu">
@@ -20,6 +20,9 @@
         <li><a class="menu-link" onclick="scrollToSection('footer', true)">contact us</a></li>
     </ul>
 </div>
+<button class="flex" id="scroll-top-button">
+
+</button>
 <div class="container flex" id="wrapper">
     <section class="flex rounded-header">
         <button class="flex" id="hamburger-button">
@@ -28,6 +31,12 @@
             <span></span>
         </button>
         <div class="content flex">
+            <ul class="flex" id="header-nav">
+                <li><a class="menu-link" onclick="scrollToSection('about')">about</a></li>
+                <li><a class="menu-link" onclick="scrollToSection('portfolio')">latest work</a></li>
+                <li><a class="menu-link" onclick="scrollToSection('services')">plans</a></li>
+                <li><a class="menu-link" onclick="scrollToSection('footer', true)">contact us</a></li>
+            </ul>
             <h1 class="header-title">Vicky Button</br> Web Design &<br/> Development</h1>
             <h2 class="header-description">We create premium, hand-crafted websites tailored to your business's needs. Launch your online presence today for as low as $150/mo.</h2>
             <div class="flex header-buttons">
@@ -38,12 +47,21 @@
     </section>
     <section class="flex" id="about">
         <div class="content flex" id="about-content">
-            <h2 class="large-subtitle">
+            <h2 class="flex large-subtitle">
                 <div class="flex">
                     <span class="bold-text">premium websites</span><span> competitive rates</span>
-                    
                 </div>
             </h2>
+            <span>We create <span>modern</span> web experiences using the most effective web design practices. We believe that no company should be at a disadvantage because they cannot afford an online presence. That's why we offer <span>premium</span> websites at <span>affordable</span> rates.</span>
+            <img src="media/streamline-icon-grab-phone-3@140x140.png" alt="A hand holding a smart phone">
+            <h2>Mobile-Optimized Design</h2>
+            <span>Over 50% of website traffic comes from mobile devices. That's why we employ <span>mobile-first</span> design to create the ultimate mobile viewing experience.</span>
+            <img src="media/streamline-icon-responsive-ui-1@140x140.png" alt="A computer, tablet, and smartphone">
+            <h2>Responsive Design</h2>
+            <span>In addition to mobile devices, your website will look <span>spectacular</span> on any device, including tablets, laptops, and desktops.</span>
+            <img src="media/streamline-icon-app-burning-2@140x140.png" alt="An application window with a flame inside">
+            <h2>Lightweight Websites</h2>
+            <span>Many websites nowadays are bloated with unnecessary code that slows down and degrades performance. If your website doesn't need something, we don't use it- it's as <span>simple</span> as that.</span>
         </div>
     </section>
     <section class="flex" id="portfolio">
@@ -51,7 +69,7 @@
     </section>
     <section class="flex" id="map">
         <div class="content flex map-content">
-            <h2 class="section-header">How It Works</h2>
+            <h2 class="section-header">how it works</h2>
             <div class="flex map">
                 <div class=" flex map-part">
                     <div class="flex map-step">1</div>
@@ -82,7 +100,7 @@
         </div>
     </section>
     <section class="flex" id="services">
-        <div class="content flex services-content">
+        <div class="content flex" id="services-content">
             <div class="flex information-card-container">
                 <div class="flex information-card">
                     <h2 class="information-card-header">Standard Plan</h2>
@@ -133,7 +151,7 @@
     </section>
     <section class="flex" id="footer">
         <div class="content flex">
-            <h2 class="section-header">Contact Us</h2>
+            <h2 class="section-header">contact us</h2>
             <form name="contact" method="post" class="flex footer-contact-form" data-netlify-recaptcha="true" data-netlify="true">
                 <input type="text" name="name" placeholder="Name" maxlength="64" required>
                 <input type="text" name="business" placeholder="Business" maxlength="64" optional>
