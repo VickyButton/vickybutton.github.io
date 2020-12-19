@@ -1,4 +1,4 @@
-/*CSS REST*/
+/*CSS RESET*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,6 +70,11 @@ table {
 
 	--pushTime: 600ms;
 	--boxRadius: 8px;
+}
+
+body {
+	overflow-x: hidden;
+	transition: var(--pushTime);
 }
 
 .flex {
@@ -175,8 +180,8 @@ section {
 	box-sizing: border-box;
 	position: fixed;
 	top: 0;
-	right: -100%;
-	z-index: 10;
+	left: 100%;
+	z-index: 11;
 	flex-direction: column;
 	padding: 20px 20px 0;
 	width: 100vw;
@@ -244,18 +249,19 @@ section {
 	background: #fff;
 	border-radius: var(--boxRadius);
 	box-shadow: 0 0 20px 1px rgba(105, 105, 105, 0.3);
-	font-family: verdana;
-	font-size: 1.7rem;
-	font-weight: 800;
-	font-variant: small-caps;
-	color: #000;
 }
 
 #pullout-menu > li {
 	margin-bottom: 20px;
 }
 
-#pullout-menu > li > a {
+.menu-link {
+	font-family: verdana;
+	font-size: 1.7rem;
+	font-weight: 800;
+	font-variant: small-caps;
+	color: #000;
+	transition: 300ms;
 	cursor: pointer;
 }
 
@@ -724,6 +730,68 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+	:root {
+		--pushTime: 1000ms;
+	}
+
+	#wrapper {
+		box-shadow: 0 0 20px 1px rgba(105, 105, 105, 0.3);
+	}
+
+	.pushed {
+		transform: translateX(-300px);
+	}
+	
+	#hamburger-menu {
+		z-index: -1;
+		padding: 0;
+		background: rgb(230, 230, 230);
+	}
+
+	#pullout-menu {
+		height: 100vh;
+		width: 300px;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	#pullout-menu > li {
+		position: relative;
+	}
+	
+	.menu-link {
+		position: relative;
+		font-weight: 400;
+		color: rgb(66, 66, 66);
+	}
+
+	#pullout-menu > li > a:hover {
+		color: var(--babyBlue);
+	}
+
+	#pullout-menu > li > a::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		width: 0%;
+		background: var(--babyBlue);
+		transition: 300ms;
+	}
+
+	#pullout-menu > li > a:hover::after {
+		width: 100%;
+	}
+
+	#exit-button {
+		z-index: 10;
+	}
+
+	#exit-button::before, #exit-button::after {
+		background: rgb(66, 66, 66);
+	}
+
 	.map-part {
 		height: 400px;
 		width: 100%;
@@ -736,19 +804,6 @@ footer {
 }
 
 @media only screen and (min-width: 1100px) {
-	#hamburger-menu, #hamburger-button	{
-		display: none;
-	}
-	
-	#hamburger-menu.visible {
-		display: none;
-		opacity: 0;
-	}
-
-	#header-nav {
-		display: flex;
-	}
-
 	.featured {
 		transform: scale(1.05);
 		z-index: 2;
@@ -770,10 +825,4 @@ footer {
 		flex-direction: row;
 	}
 
-}
-
-@media only screen and (min-width: 2000px) {
-	#header-nav {
-		display: none;
-	}
 }
